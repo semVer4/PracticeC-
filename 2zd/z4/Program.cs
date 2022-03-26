@@ -10,20 +10,45 @@ namespace z4
     {
         static void Main(string[] args)
         {
-            Console.Write("A: ");
+            Console.WriteLine("A: ");
             int A = Convert.ToInt32(Console.ReadLine());
-            Console.Write("B: ");
+            Console.WriteLine("B: ");
             int B = Convert.ToInt32(Console.ReadLine());
-            
-            Console.Write("X: ");
-            int X = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Y: ");
-            int Y = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = A; i < B; i++)
+            Console.WriteLine("X: ");
+            int X = Convert.ToInt32(Console.ReadLine());
+
+            while (A % 10 != X)
             {
-                if ((i - X) % 10 == 0 || (i - Y) % 10 == 0) Console.WriteLine(i);
+                A++;
             }
+
+            int i;
+            Console.WriteLine();
+            Console.WriteLine("Цикл for: ");
+            for (i = A; i <= B; i += 10)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Цикл while: ");
+            i = A;
+            while (i <= B)
+            {
+                Console.WriteLine(i);
+                i += 10;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Цикл do while: ");
+            i = A;
+            do
+            {
+                Console.WriteLine(i);
+                i += 10;
+            }
+            while (i <= B);
         }
     }
 }
