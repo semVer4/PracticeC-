@@ -10,45 +10,48 @@ namespace z4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("A: ");
             int A = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("B: ");
             int B = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("X: ");
             int X = Convert.ToInt32(Console.ReadLine());
+            int Y = Convert.ToInt32(Console.ReadLine());
 
-            while (A % 10 != X)
-            {
-                A++;
-            }
-
-            int i;
-            Console.WriteLine();
-            Console.WriteLine("Цикл for: ");
-            for (i = A; i <= B; i += 10)
-            {
-                Console.WriteLine(i);
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Цикл while: ");
-            i = A;
-            while (i <= B)
-            {
-                Console.WriteLine(i);
-                i += 10;
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Цикл do while: ");
-            i = A;
+            Console.WriteLine("Цикл - do while");
+            int i = B;
             do
             {
-                Console.WriteLine(i);
-                i += 10;
+                if (i % 2 == 0 && i % 10 == X || i % 10 == Y)
+                {
+                    Console.WriteLine(i);
+                }
+
+                i--;
+
+            } while (i >= A);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Цикл - for");
+            for(var number = B; number >= A; number--)
+            {
+                if(number % 2 == 0 && number % 10 == X || number % 10 == Y)
+                {
+                    Console.WriteLine(number);
+                }
             }
-            while (i <= B);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Цикл - while");
+            while(A <= B)
+            {
+                B--;
+
+                if(B % 2 == 0 && B % 10 == X || B % 10 == Y)
+                {
+                    Console.WriteLine(B);
+                }
+            }
         }
     }
 }
