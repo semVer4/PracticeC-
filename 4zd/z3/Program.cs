@@ -11,8 +11,8 @@ namespace z3
         static void Main(string[] args)
         {
             RStation station = new RStation();
-            int Kol = 4;
-            for (int i = 0; i < Kol; i++)
+            int count = 4;
+            for (int i = 0; i < count; i++)
             {
                 station.Add();
             }

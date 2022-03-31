@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace z3
 {
-    class Train : IComparable     // класс поезд
+    class Train : IComparable 
     {
-        String nameStation; // поле пункта назначения
-        int namber;         // поле номера поезда
-        DateTime time;      // поле времени отправления
-        public String NameStation      //свойство поля пункта назначения
+        String nameStation; 
+        int namber;         
+        DateTime time;      
+        public String NameStation      
         {
             get { return nameStation; }
             set { nameStation = value; }
         }
 
-        public int Namber           //свойство поля номера поезда
+        public int Namber           
         {
             get { return namber; }
             set
@@ -27,19 +27,19 @@ namespace z3
             }
         }
 
-        public DateTime Time        //свойство поля времени отправления
+        public DateTime Time        
         {
             get { return time; }
             set { time = value; }
         }
 
-        void SetTime()       //метод для ввода времени
+        void SetTime()       
         {
             while (true)
             {
                 int hour = 0;
                 int minute = 0;
-                Console.Write("Введите время отправления поезда: "); // [hour.minute]
+                Console.Write("Введите время отправления поезда: "); 
                 string t = Console.ReadLine();
                 string h = "";
                 string m = "";
@@ -71,7 +71,7 @@ namespace z3
                 {
                     hour = Int32.Parse(h);
                     minute = Int32.Parse(m);
-                    Time = new DateTime(2016, 12, 12, hour, minute, 0);
+                    Time = new DateTime(2022, 12, 12, hour, minute, 0);
                     return;
                 }
                 catch
@@ -82,21 +82,21 @@ namespace z3
             }
         }
 
-        public Train(string NameStation, int Namber)       //Перегруженный конструктор класса
+        public Train(string NameStation, int Namber)    
         {
             this.NameStation = NameStation;
             this.Namber = Namber;
             SetTime();
         }
 
-        public Train(string NameStation, int Namber, DateTime Time)       //Перегруженный конструктор класса
+        public Train(string NameStation, int Namber, DateTime Time)    
         {
             this.NameStation = NameStation;
             this.Namber = Namber;
             this.Time = Time;
         }
 
-        public int CompareTo(object input)  //реализования метода интерфейса IComparable для сортировки поездов по времени отправления
+        public int CompareTo(object input) 
         {
             if (input is Train)
             {
@@ -111,13 +111,13 @@ namespace z3
             return 0;
         }
 
-        public override string ToString()    //переопределение метода ToString()
+        public override string ToString() 
         {
             string info = String.Format("Поезд №{0} следует в пункт назначения {1}. Время отправления: {2}.{3}!",
                 Namber, NameStation, time.Hour, time.Minute);
             return info;
         }
-        public void ShowInfo()      //вывод информации о поезде
+        public void ShowInfo() 
         {
             Console.WriteLine(ToString());
         }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace z3
 {
-    class RStation      //класс вокзал
+    class RStation     
     {
-        List<Train> Trains = new List<Train>();     //объявление коллекции поездов
+        List<Train> Trains = new List<Train>();   
 
-        public Train this[int index]    //пользовательский индексатор для класса
+        public Train this[int index]   
         {
             get
             {
@@ -26,11 +26,11 @@ namespace z3
             }
         }
 
-        public void Add()       //метод добавления поезда в коллекцию
+        public void Add()     
         {
             int namber = 0;
             bool flag = true;
-            while (flag)
+            while(flag)
             {
                 try
                 {
@@ -50,7 +50,7 @@ namespace z3
             Trains.Add(train);
             Trains.Sort();
         }
-        public void ShowLastTime()  //метод для вывода информации поездов отправляемых после заданного времени
+        public void ShowLastTime() 
         {
             Console.Write("Введите время для сравнения: ");
             Train p1 = new Train("null", 1);
@@ -59,7 +59,7 @@ namespace z3
                     this[i].ShowInfo();
         }
 
-        public void ShowNameStation() //метод для вывода ин-ии о поездах, отправляющихся в заданный пункт назначения
+        public void ShowNameStation()
         {
             Console.Write("Введите пункт назначения: ");
             string punkt = Console.ReadLine();
