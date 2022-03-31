@@ -8,51 +8,106 @@ namespace z2
 {
     internal class Program
     {
-        public class WorkArr
+        public class SearchArr
         {
-            //int x = 5;
-            double[,] mas = new double[5, 5];
+            public double[,] mas;
+            int rows;
+            int colums;
 
-            Random random = new Random();
-
-            double count = 1;
-
-            public void ArrFilling()
+            public static bool operator ==(SearchArr current, SearchArr mas)
             {
-                for (int i = 1; i < 5; i++)
+                if (current.rows != mas.rows || current.colums != mas.colums)
                 {
-                    for (int j = 1; j < 5; j++)
+                    return false;
+                }
+                for (int i = 0; i < current.rows; i++)
+                {
+                    for (int j = 0; j < current.colums; j++)
                     {
-                        mas[i, j] = random.Next(20);
-                        if(mas[i, j] < 10)
+                        if (current[i, j] != mas[i, j])
                         {
-                            count = count *= mas[i, j];
-                            //Console.WriteLine(count);
+                            return false;
                         }
                     }
                 }
-
-                Console.WriteLine(count);
+                return true;
+            }
+            public static bool operator !=(SearchArr current, SearchArr mas)
+            {
+                if (current.rows != mas.rows || current.colums != mas.colums)
+                {
+                    return true;
+                }
+                for (int i = 0; i < current.rows; i++)
+                {
+                    for (int j = 0; j < current.colums; j++)
+                    {
+                        if (current[i, j] != mas[i, j])
+                        {
+                            return true;
+                        }
+                    }
+                }
+                return false;
             }
 
-            /*public void ArrSearch()
+
+            public SearchArr(int rows, int colums)
             {
-                double count = 1;
+                this.rows = rows;
+                this.colums = colums;
 
-                if (arr < 10)
+                mas = new double[rows, colums];
+
+            }
+            public double this[int index1, int index2]
+            {
+                get { return mas[index1, index2]; }
+                set { mas[index1, index2] = value; }
+            }
+
+            double count = 1;
+            public void Swap()
+            {
+                for(int i = 0; i < rows; i++)
                 {
-                    count = count *= arr;
-                    Console.WriteLine(arr);
+                    for(int j = 0; j < colums; j++)
+                    {
+                        if(mas[i, j] < 10 && mas[i, j] > 0)
+                        {
+                            count = count * mas[i, j];
+                        }
+                    }
+                    Console.WriteLine($"Произведение положительных элементов < 10: {count}");
                 }
+            }
+            public void CreatMas()
+            {
 
-                Console.WriteLine($"Произведение: {count}");
-            }*/
+                for (int i = 0; i < rows; i++)
+                {
+                    for (int j = 0; j < colums; j++)
+                    {
+                        Console.Write("Введите элемент [{0},{1}] : ", i, j);
+                        mas[i, j] = double.Parse(Console.ReadLine());
+                    }
+                }
+            }
         }
 
         static void Main(string[] args)
-        { 
-            WorkArr workArr = new WorkArr();
-            workArr.ArrFilling();
+        {
+            Console.WriteLine("Введите количество строк:");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите количество столбцов:");
+            int m = int.Parse(Console.ReadLine());
+            Console.WriteLine("Заполните массив:");
+
+            SearchArr mas = new SearchArr(n, m);
+            SearchArr mas2 = new SearchArr(n, m);
+
+            mas.CreatMas();
+            mas.Swap();
         }
     }
 }
