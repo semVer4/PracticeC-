@@ -26,7 +26,7 @@ namespace z2
                     Console.WriteLine(f);
                 }
 
-                else throw new OutOfDiapazonException("Ошибка!","Выход из диапазона!");
+                else throw new OutOfDiapazonException("Выход из диапазона!", "Ошибка!");
             }
             catch (DivideByZeroException ex)
             {
