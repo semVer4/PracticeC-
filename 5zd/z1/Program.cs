@@ -39,7 +39,6 @@ namespace z1
         {
             try
             {
-                Console.WriteLine("Введите х");
                 double x = Convert.ToDouble(Console.ReadLine());
                 CalcA(x);
                 CalcB(x);
