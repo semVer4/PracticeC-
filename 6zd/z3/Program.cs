@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using z3.Exceptions;
 
 namespace z3
 {
@@ -60,7 +59,7 @@ namespace z3
                     {
                         double s = Math.Pow(mas[i, j], 2);
                         sum = sum + s;
-                    }
+                    } 
                 }
             }
             Console.WriteLine(sum);
@@ -81,15 +80,7 @@ namespace z3
             SearchMin(mas, n);
 
             Console.WriteLine("Сумма квадратов отрицательных чисел:");
-            try
-            {
-                Sum(mas);
-                throw new OutOfDiapazonException("Выход из диапазона! [a..b]\na и b - Вводятся с клавиатуры", "Error");
-            }
-            catch(OutOfDiapazonException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            Sum(mas);
         }
     }
 }
