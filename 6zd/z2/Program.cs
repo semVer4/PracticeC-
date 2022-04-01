@@ -8,8 +8,9 @@ namespace z2
 {
     internal class Program
     {
-        public static void ArrFilling(double[] mas)
+        public static double[] ArrFilling(int n = 100)
         {
+            double[] mas = new double[n];
             Random random = new Random();
             for (int i = 0; i <= 20; i++)
             {
@@ -21,6 +22,8 @@ namespace z2
                     Console.WriteLine(a1);
                 }
             }
+
+            return mas;
         }
 
         public static void MoreArr(double more, double[] mas)
@@ -62,8 +65,8 @@ namespace z2
             Console.WriteLine("Введите число k");
             int k = int.Parse(Console.ReadLine());
 
-            double[] mas = new double[100];
-            ArrFilling(mas);
+            double[] mas = ArrFilling();
+            ArrFilling();
 
             Sort(mas);
 

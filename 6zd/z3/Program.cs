@@ -8,9 +8,11 @@ namespace z3
 {
     internal class Program
     {
-        public static void ArrFilling(int[,] mas, int a, int b, int n)
+        public static int[,] ArrFilling(int a = 1, int b = 10, int n = 10)
         {
+            int[,] mas = new int[n, n];
             Random random = new Random();
+
             for(int i = 0; i < n; i++)
             {
                 for(int j = 0; j < n; j++)
@@ -18,6 +20,7 @@ namespace z3
                     mas[i, j] = random.Next(a, b);
                 }
             }
+            return mas;
         }
         public static void PrintMas(int[,] mas, int n)
         {
@@ -68,12 +71,11 @@ namespace z3
         {
             Console.WriteLine("Введите размерность массива");
             int n = int.Parse(Console.ReadLine());
-            int[,] mas = new int[n, n];
+            int[,] mas = ArrFilling();
             Console.WriteLine("Введите а");
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите b");
             int b = int.Parse(Console.ReadLine());
-            ArrFilling(mas, a, b, n);
             PrintMas(mas, n);
 
             Console.WriteLine("Найменьший элемент в каждой строке:");

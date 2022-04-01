@@ -8,8 +8,9 @@ namespace z4
 {
     internal class Program
     {
-        public static void SalaryInfo(int a, int b, int[,] salary)
+        public static int[,] SalaryInfo(int a = 20, int b = 12)
         {
+            int[,] salary = new int[a, b];
             Random random = new Random();
 
             for (int i = 0; i < a; i++)
@@ -21,9 +22,11 @@ namespace z4
                 }
                 Console.WriteLine();
             }
+
+            return salary;
         }
 
-        public static void FebruarySum(int sumF, int[,] salary)
+        public static void FebruarySum(ref int sumF, int[,] salary)
         {
             for(int i = 0; i < salary.GetLength(0); i++)
             {
@@ -33,8 +36,8 @@ namespace z4
             Console.WriteLine(sumF);
         }
 
-        public static void OctoberSum(int sumO, int[,] salary)
-        {
+        public static void OctoberSum(ref int sumO, int[,] salary)
+        { 
             for (int i = 0; i < salary.GetLength(0); i++)
             {
                 sumO = sumO + salary[i, 10];
@@ -48,19 +51,19 @@ namespace z4
             int a = 20;
             int b = 12;
 
-            int[,] salary = new int[a, b];
+            int[,] salary = SalaryInfo();
 
             Console.WriteLine("Информация о зарплате:");
-            SalaryInfo(20, 12, salary);
+            SalaryInfo();
 
             int sum0 = 0;
             int sum1 = 0;
 
             Console.WriteLine("\nОбщая зарплата в феврале");
-            FebruarySum(sum0, salary);
+            FebruarySum(ref sum0, salary);
 
             Console.WriteLine("\nОбщая зарплата в октябре");
-            OctoberSum(sum1, salary);
+            OctoberSum(ref sum1, salary);
 
             if(sum0 > sum1)
             {

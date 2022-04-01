@@ -8,8 +8,9 @@ namespace z1
 {
     internal class Program
     {
-        public static void ArrFilling(int x, double[] mas)
+        public static double[] ArrFilling(int n = 10)
         {
+            double[] mas = new double[n];
             Random random = new Random();
 
             for(var i = 0; i < mas.Length; i++)
@@ -17,6 +18,8 @@ namespace z1
                 mas[i] = random.Next(30);
                 Console.WriteLine(mas[i]);
             }
+
+            return mas;
         }
 
         public static void Print(int x, double[] mas)
@@ -35,10 +38,10 @@ namespace z1
             Console.WriteLine("Размерность массива:");
             int x = Convert.ToInt32(Console.ReadLine());
 
-            double[] mas = new double[x];
+            double[] mas = ArrFilling();
 
             Console.WriteLine("Заполнение:");
-            ArrFilling(x, mas);
+            ArrFilling();
 
             Console.WriteLine("Вывод по условию:");
             Print(x, mas);
