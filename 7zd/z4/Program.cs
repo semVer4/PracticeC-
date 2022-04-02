@@ -8,7 +8,7 @@ namespace z4
 {
     internal class Program
     {
-        static string GetAplhabet()
+        static string GetAlphabet()
         {
             StringBuilder sB = new StringBuilder();
 
@@ -16,18 +16,20 @@ namespace z4
             {
                 sB.Append(i.ToString());
             }
+
             return sB.ToString();
         }
 
         public static int[] GetNumber(string text)
         {
-            string Alphabet = GetAplhabet();
+            string Alphabet = GetAlphabet();
 
             int[] array = new int[text.Length];
             for(int i = 0; i < text.Length; i++)
             {
                 array[i] = Alphabet.IndexOf(text[i]) + 1;
             }
+
             return array;
         }
 
@@ -39,6 +41,7 @@ namespace z4
                 sum += Number % 10;
                 Number /= 10;
             }
+
             return sum;
         }
 
@@ -48,10 +51,12 @@ namespace z4
             string textR = "Рожко Никита Юрьевич".Replace(" ", "").ToLower();
             int[] mas = GetNumber(textR);
             int sum1 = mas.Sum();
+
             while(sum1 > 9)
             {
                 sum1 = Sum(sum1);
             }
+
             Console.WriteLine(text);
             Console.WriteLine(sum1);
         }
