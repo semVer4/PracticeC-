@@ -59,10 +59,10 @@ namespace z3
             Replace(Console.ReadLine());
 
             string print = PrintReverse(Console.ReadLine());
-            var reversString = new string(print.Reverse().ToArray());
+            var rString = new string(print.Reverse().ToArray());
             string.Join("", print.Reverse());
 
-            Console.WriteLine($"Обратный порядок: {reversString}");
+            Console.WriteLine($"Обратный порядок: {rString}");
             var firstWord = Cutting(Console.ReadLine());
             StringBuilder sb = new StringBuilder(firstWord);
 
