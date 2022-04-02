@@ -12,7 +12,7 @@ namespace z2
         {
             string[] result = text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            foreach (string line in result)
+            foreach(string line in result)
             {
                 if (line.Last() == line.First())
                     Console.WriteLine($"Результат: {line}");

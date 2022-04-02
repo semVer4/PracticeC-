@@ -8,29 +8,29 @@ namespace z3
 {
     internal class Program
     {
-        static public void Swap(string s)
+        static public void Replace(string s)
         {
             string[] split = s.Split(' ');
-            string sSplit = split[split.Length - 1];
+            string splitStr = split[split.Length - 1];
             for (int i = 1; i < split.Length - 1; i++)
             {
-                sSplit += " " + split[i];
-                sSplit += " " + split[0];
-                Console.WriteLine(sSplit);
+                splitStr += " " + split[i];
+                splitStr += " " + split[0];
+                Console.WriteLine(splitStr);
             }
         }
-        static public string Glue(string s)
+        static public string Gluing(string s)
         {
             string[] split = s.Split(' ');
-            string sSplit = split[split.Length - 1];
+            string splitStr = split[split.Length - 1];
             for (int i = 0; i < split.Length - 1; i++)
             {
-                sSplit = split[1] + split[2];
+                splitStr = split[1] + split[2];
 
             }
-            return sSplit;
+            return splitStr;
         }
-        static public string Print3SLovo(string s)
+        static public string PrintReverse(string s)
         {
             string[] split = s.Split(' ');
             string a = split[split.Length - 1];
@@ -41,7 +41,7 @@ namespace z3
             return a;
 
         }
-        static public string PrintFirstWord(string s)
+        static public string Cutting(string s)
         {
             string[] split = s.Split(' ');
             string firstWord = split[split.Length - 1];
@@ -53,20 +53,20 @@ namespace z3
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите предложение");
-            string s = Console.ReadLine();
-            Console.WriteLine($"Склеяные строка 2 и 3 : {Glue(s)}");
-            Console.WriteLine($"1 и послдеднее слова поменялись местами ");
-            Swap(s);
-            string rez = Print3SLovo(s);
-            var reversString = new string(rez.Reverse().ToArray());
-            string.Join("", rez.Reverse());
+            Console.WriteLine($"Склеянные: {Gluing(Console.ReadLine())}");
 
-            Console.WriteLine($"Обратная строка {reversString}");
-            var firstWord = PrintFirstWord(s);
+            Console.WriteLine($"1 и последнее слова поменялись местами");
+            Replace(Console.ReadLine());
+
+            string print = PrintReverse(Console.ReadLine());
+            var reversString = new string(print.Reverse().ToArray());
+            string.Join("", print.Reverse());
+
+            Console.WriteLine($"Обратный порядок: {reversString}");
+            var firstWord = Cutting(Console.ReadLine());
             StringBuilder sb = new StringBuilder(firstWord);
 
-            Console.WriteLine($"Первое слово без 2 первых букв {sb.Remove(0, 2)}");
+            Console.WriteLine($"Без 2 букв: {sb.Remove(0, 2)}");
         }
     }
 }
