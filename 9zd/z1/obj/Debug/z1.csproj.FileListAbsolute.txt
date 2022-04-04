@@ -1,0 +1,8 @@
+D:\C#\Практика\9\z1\bin\Debug\z1.exe.config
+D:\C#\Практика\9\z1\bin\Debug\z1.exe
+D:\C#\Практика\9\z1\bin\Debug\z1.pdb
+D:\C#\Практика\9\z1\obj\Debug\z1.csproj.AssemblyReference.cache
+D:\C#\Практика\9\z1\obj\Debug\z1.csproj.SuggestedBindingRedirects.cache
+D:\C#\Практика\9\z1\obj\Debug\z1.csproj.CoreCompileInputs.cache
+D:\C#\Практика\9\z1\obj\Debug\z1.exe
+D:\C#\Практика\9\z1\obj\Debug\z1.pdb
