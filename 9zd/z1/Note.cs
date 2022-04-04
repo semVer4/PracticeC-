@@ -16,7 +16,7 @@ namespace z1
 
             public Note[] Filling()
             {
-                Note[] info = new Note[2];
+                Note[] info = new Note[8];
 
                 for(int i = 0; i < info.Length; i++)
                 {
