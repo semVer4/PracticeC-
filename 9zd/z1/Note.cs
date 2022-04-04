@@ -73,7 +73,8 @@ namespace z1
                     {
                         Console.WriteLine($"Имя: {info[i].name}");
                         Console.WriteLine($"Фамилия: {info[i].surname}");
-                        Console.WriteLine($"Телефон: {info[i].phone}\n");
+                        Console.WriteLine($"Телефон: {info[i].phone}");
+                        Console.WriteLine($"День Рождения: {info[i].birthDay}");
                     }
                 } 
             }
