@@ -75,6 +75,9 @@ namespace z1
                         Console.WriteLine($"Фамилия: {info[i].surname}");
                         Console.WriteLine($"Телефон: {info[i].phone}");
                         Console.WriteLine($"День Рождения: {info[i].birthDay}");
+                    } else
+                    {
+                        Console.WriteLine("Нет совпадений!");
                     }
                 } 
             }
