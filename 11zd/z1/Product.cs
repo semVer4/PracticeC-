@@ -22,8 +22,6 @@ namespace z1
                 Console.WriteLine($"Цена товара: {cost}\nКол-во товаров: {count}");
             }
 
-            public virtual void ChangeCost() {}
-
             public int Count { get { return count; } set { count = value; } }
             public double Cost { get { return cost; } set { cost = value; } }
             

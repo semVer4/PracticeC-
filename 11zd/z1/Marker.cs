@@ -26,7 +26,7 @@ namespace z1
                 grade = Convert.ToInt32(Console.ReadLine());
             }
 
-            public override void ChangeCost()
+            public virtual void ChangeCost()
             {
                 Cost = 1 / Math.Sqrt(grade);
             }
