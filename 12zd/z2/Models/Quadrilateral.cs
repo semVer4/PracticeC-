@@ -14,7 +14,7 @@ namespace z1
                 this.name = name;
             }
 
-            public abstract double FigureArea()
+            public virtual double FigureArea()
             {
                 return S;
             }
