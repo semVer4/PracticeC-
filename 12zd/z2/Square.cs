@@ -25,7 +25,7 @@ namespace z1
                 Aside = Convert.ToInt32(Console.ReadLine());
             }
 
-            public virtual double FigureArea()
+            public override double FigureArea()
             {
                 S = Aside * Aside;
                 return S;

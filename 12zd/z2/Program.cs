@@ -10,22 +10,15 @@ namespace z1
     {
         static void Main(string[] args)
         {
-            int count = int.Parse(Console.ReadLine());
-            Quadrilateral[] quadrilaterals = new Quadrilateral[count] ;
+            Quadrilateral[] quadrilaterals = new Quadrilateral[] { new Square("F1"), new Rectangle("F2") };
 
-            foreach(Quadrilateral quadrilateral in quadrilaterals)
+            foreach (Quadrilateral quadrilateral in quadrilaterals)
             {
                 quadrilateral.GetInfo();
             }
-            for(int i = 0;i<count;i++)
-            {
-                quadrilaterals[i] = new Rectangle(Console.ReadLine());
-            }
-            foreach(Quadrilateral quadrilateral in quadrilaterals)
-            {
-                quadrilateral.GetInfo();
-            }
-            var qMax = quadrilaterals.Max(p => p.GetInfo);
+
+            var MaxS = quadrilaterals.Max(quadrilateral => quadrilateral.FigureArea());
+            Console.WriteLine($"Максимальная площадь: {MaxS}");
         }
     }
 }

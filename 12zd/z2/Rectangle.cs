@@ -4,11 +4,11 @@ namespace z1
 {
     internal partial class Program
     {
-        class Rectangle:Quadrilateral
+        class Rectangle : Quadrilateral
         {
             public int Aside = 1;
             public int Bside = 1;
-            public double S = 1;
+            public double S { get; set; }
 
             public Rectangle(string name):base(name)
             {
@@ -30,7 +30,7 @@ namespace z1
                 Bside = Convert.ToInt32(Console.ReadLine());
             }
                 
-            public virtual double FigureArea()
+            public override double FigureArea()
             {
                 S = Aside * Bside;
                 return S;
