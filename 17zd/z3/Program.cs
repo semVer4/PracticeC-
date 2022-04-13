@@ -56,26 +56,11 @@ namespace z3
             }
         }
 
-        static void DeleteStr()
+        static void DeleteStr(string[] mas)
         {
-            StreamReader st = new StreamReader("f.txt");
-            FileStream file = new FileStream("f2.txt", FileMode.Append, FileAccess.Write);
-            StreamWriter file1 = new StreamWriter(file);
-
-            int k = 0, m = 0;
-            string a;
-
-            while (!st.EndOfStream)
-            {
-                a = st.ReadLine();
-                k = k + 1;
-                m = k;
-
-                if (k != m)
-                {
-                    file1.WriteLine(a);
-                }
-            }
+            string[] writeText = new string[mas.Length - 1];
+            Array.Copy(mas, 0, writeText, 0, mas.Length - 1);
+            File.WriteAllLines("f2.txt", writeText);
         }
 
 
@@ -104,17 +89,6 @@ namespace z3
             }
         }
 
-        static void StrOverwriting(int s1, int s2, string[] mas)
-        {
-            for (s1 = 0; s1 < s2; s1++)
-            {
-                foreach (string s in mas)
-                {
-                    Console.WriteLine(s);
-                }
-            }
-        }
-
         static void Main(string[] args)
         {
             Console.WriteLine("Запишите 5 строк:");
@@ -128,13 +102,8 @@ namespace z3
             Console.WriteLine("\nКол-во символов:");
             AmountS(mas);
 
-            Console.WriteLine("\nУдаление последней строки:\n");
-            DeleteStr();
-
-            Console.WriteLine("Вывод строк с s1 по s2:");
-            int s1 = Convert.ToInt32(Console.ReadLine());
-            int s2 = Convert.ToInt32(Console.ReadLine());
-            StrOverwriting(s1, s2, mas);
+            Console.WriteLine("\nПоследняя строка удалена и перезаписана в другой файл\n");
+            DeleteStr(mas);
 
             Console.WriteLine("\nДлина самой длинной строки:");
             StrLength(mas);
