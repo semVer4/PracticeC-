@@ -89,6 +89,31 @@ namespace z3
             }
         }
 
+        static void PrintsStr(int s1, int s2, string[] mas)
+        {
+            string a = null;
+            string b = null;
+
+            for (int i = 0; i < mas.Length; i++)
+            {
+                a = mas[s1];
+                b = mas[s2];
+            }
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+        }
+
+        static void StrRewriting(string[] mas)
+        {
+            StreamWriter sw = new StreamWriter(new FileStream("f3.txt", FileMode.Create, FileAccess.Write));
+            
+            for (int i = mas.Length; i > 0; i--)
+                sw.WriteLine(mas[i - 1]);
+
+            sw.Close();
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Запишите 5 строк:");
@@ -112,6 +137,14 @@ namespace z3
             Console.Write("Введите букву: ");
             string letter = Console.ReadLine();
             PrintLetter(letter, mas);
+
+            Console.WriteLine("\nВведите промежуток s1, s2: ");
+            int s1 = Convert.ToInt32(Console.ReadLine());
+            int s2 = Convert.ToInt32(Console.ReadLine());
+            PrintsStr(s1, s2, mas);
+
+            Console.WriteLine("\nСтроки перезаписаны в обратном порядке, в другой файл");
+            StrRewriting(mas);
         }
     }
 }
