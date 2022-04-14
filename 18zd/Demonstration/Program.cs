@@ -12,19 +12,24 @@ namespace Demonstration
     {
         static void Main(string[] args)
         {
-            Triangle triangle = new Triangle(2, 3, 4);
+            int st = Convert.ToInt32(Console.ReadLine());
+            int st1 = Convert.ToInt32(Console.ReadLine());
+            int st2 = Convert.ToInt32(Console.ReadLine());
+
+            Triangle triangle = new Triangle(st, st1, st2);
             triangle.Perimetr();
             triangle.Square();
             triangle.ViewTriangle();
 
-            Rectangle rectangle = new Rectangle(3, 3, 2);
+            Rectangle rectangle = new Rectangle(st, st1, st2);
             rectangle.Perimetr();
             rectangle.Square();
 
             Game game = new Game();
             game.Game1();
 
-            Game2 game2 = new Game2(2);
+            int a = Convert.ToInt32(Console.ReadLine());
+            Game2 game2 = new Game2(a);
             game2.Game1();
         }
     }
