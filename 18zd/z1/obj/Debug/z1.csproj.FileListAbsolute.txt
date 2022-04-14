@@ -1,0 +1,6 @@
+D:\C#\Практика\18\z1\bin\Debug\z1.dll
+D:\C#\Практика\18\z1\bin\Debug\z1.pdb
+D:\C#\Практика\18\z1\obj\Debug\z1.csproj.AssemblyReference.cache
+D:\C#\Практика\18\z1\obj\Debug\z1.csproj.CoreCompileInputs.cache
+D:\C#\Практика\18\z1\obj\Debug\z1.dll
+D:\C#\Практика\18\z1\obj\Debug\z1.pdb
