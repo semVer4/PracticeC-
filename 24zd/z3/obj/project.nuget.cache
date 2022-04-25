@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "tqvj113ahFs8G0l/wt1BLYlk4PlMYlHxA1K86J85+dQNWX+lJh7YeO71Nx+M3YLchCzXU7f01xAMY7pHbzGkyw==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\Практика\\24\\z3\\z3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nikita\\.nuget\\packages\\syncfusion.chart.base\\20.1.0.50\\syncfusion.chart.base.20.1.0.50.nupkg.sha512",
+    "C:\\Users\\Nikita\\.nuget\\packages\\syncfusion.chart.windows\\20.1.0.50\\syncfusion.chart.windows.20.1.0.50.nupkg.sha512",
+    "C:\\Users\\Nikita\\.nuget\\packages\\syncfusion.grouping.base\\20.1.0.50\\syncfusion.grouping.base.20.1.0.50.nupkg.sha512",
+    "C:\\Users\\Nikita\\.nuget\\packages\\syncfusion.licensing\\20.1.0.50\\syncfusion.licensing.20.1.0.50.nupkg.sha512",
+    "C:\\Users\\Nikita\\.nuget\\packages\\syncfusion.shared.base\\20.1.0.50\\syncfusion.shared.base.20.1.0.50.nupkg.sha512"
+  ],
+  "logs": []
+}

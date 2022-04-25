@@ -1,0 +1,105 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Syncfusion.Chart.Base/20.1.0.50": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.50",
+          "Syncfusion.Shared.Base": "20.1.0.50"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Chart.Base.dll": {
+            "assemblyVersion": "20.1500.0.50",
+            "fileVersion": "20.1500.0.50"
+          }
+        }
+      },
+      "Syncfusion.Chart.Windows/20.1.0.50": {
+        "dependencies": {
+          "Syncfusion.Chart.Base": "20.1.0.50",
+          "Syncfusion.Grouping.Base": "20.1.0.50",
+          "Syncfusion.Licensing": "20.1.0.50",
+          "Syncfusion.Shared.Base": "20.1.0.50"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Chart.Windows.dll": {
+            "assemblyVersion": "20.1500.0.50",
+            "fileVersion": "20.1500.0.50"
+          }
+        }
+      },
+      "Syncfusion.Grouping.Base/20.1.0.50": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.50",
+          "Syncfusion.Shared.Base": "20.1.0.50"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Grouping.Base.dll": {
+            "assemblyVersion": "20.1500.0.50",
+            "fileVersion": "20.1500.0.50"
+          }
+        }
+      },
+      "Syncfusion.Licensing/20.1.0.50": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.1.0.50",
+            "fileVersion": "20.1.0.50"
+          }
+        }
+      },
+      "Syncfusion.Shared.Base/20.1.0.50": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.50"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Shared.Base.dll": {
+            "assemblyVersion": "20.1500.0.50",
+            "fileVersion": "20.1500.0.50"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Syncfusion.Chart.Base/20.1.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Axs2hIUm5hxLN/plNpgrIcatAEKjLb+B4T9MYLBDKbWzatSB5NBYFTRsygvZOQlU9K4hU5XTHkq3/s1VD1PfxQ==",
+      "path": "syncfusion.chart.base/20.1.0.50",
+      "hashPath": "syncfusion.chart.base.20.1.0.50.nupkg.sha512"
+    },
+    "Syncfusion.Chart.Windows/20.1.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IoXkXd5TgQHAkWfrYh0Jn8/337TfNC+gL89MIKc1fhdfs1r4gD9KLgFZoI78bTzOJshHDqdnTfs7T57VSwqvjQ==",
+      "path": "syncfusion.chart.windows/20.1.0.50",
+      "hashPath": "syncfusion.chart.windows.20.1.0.50.nupkg.sha512"
+    },
+    "Syncfusion.Grouping.Base/20.1.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/IKJ28dk/WfS/VPbANwOB2/HM3d8OP0U4xX53mSMrGunPftWPCWh93walqcCbLnHf4QZ75oDooPBZ7cdSRWg5g==",
+      "path": "syncfusion.grouping.base/20.1.0.50",
+      "hashPath": "syncfusion.grouping.base.20.1.0.50.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.1.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sQBaysAP2fQ0ISeJjowl7wpiLjAwTUKxvQrft+QYTtjYbaUSxfoEh7tYi2/Pgs8qnGIrp+6PzIALI9bcVFPflw==",
+      "path": "syncfusion.licensing/20.1.0.50",
+      "hashPath": "syncfusion.licensing.20.1.0.50.nupkg.sha512"
+    },
+    "Syncfusion.Shared.Base/20.1.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jNy+Oj6Cm7Nh3bvZ/QFFmwcX9sBYfhVk/0ajRF9kdefwzUY0SjLaln/rP2KT0szMstTUmW/annbFSVkuBZcZyA==",
+      "path": "syncfusion.shared.base/20.1.0.50",
+      "hashPath": "syncfusion.shared.base.20.1.0.50.nupkg.sha512"
+    }
+  }
+}

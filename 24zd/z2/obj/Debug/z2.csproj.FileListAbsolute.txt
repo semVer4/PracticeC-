@@ -1,0 +1,5 @@
+D:\C#\Практика\24\z2\obj\Debug\z2.csproj.AssemblyReference.cache
+D:\C#\Практика\24\z2\obj\Debug\z2.csproj.SuggestedBindingRedirects.cache
+D:\C#\Практика\24\z2\obj\Debug\z2.Properties.Resources.resources
+D:\C#\Практика\24\z2\obj\Debug\z2.csproj.GenerateResource.cache
+D:\C#\Практика\24\z2\obj\Debug\z2.csproj.CoreCompileInputs.cache
