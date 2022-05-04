@@ -1,0 +1,22 @@
+C:\TRASH\Практика c#\Practica\zadanie29\num1\bin\Debug\num1.exe.config
+C:\TRASH\Практика c#\Practica\zadanie29\num1\bin\Debug\num1.exe
+C:\TRASH\Практика c#\Practica\zadanie29\num1\bin\Debug\num1.pdb
+C:\TRASH\Практика c#\Practica\zadanie29\num1\obj\Debug\num1.csproj.AssemblyReference.cache
+C:\TRASH\Практика c#\Practica\zadanie29\num1\obj\Debug\num1.csproj.SuggestedBindingRedirects.cache
+C:\TRASH\Практика c#\Practica\zadanie29\num1\obj\Debug\num1.Form1.resources
+C:\TRASH\Практика c#\Practica\zadanie29\num1\obj\Debug\num1.Properties.Resources.resources
+C:\TRASH\Практика c#\Practica\zadanie29\num1\obj\Debug\num1.csproj.GenerateResource.cache
+C:\TRASH\Практика c#\Practica\zadanie29\num1\obj\Debug\num1.csproj.CoreCompileInputs.cache
+C:\TRASH\Практика c#\Practica\zadanie29\num1\obj\Debug\num1.exe
+C:\TRASH\Практика c#\Practica\zadanie29\num1\obj\Debug\num1.pdb
+D:\C#\Практика\29\num1\bin\Debug\num1.exe.config
+D:\C#\Практика\29\num1\bin\Debug\num1.exe
+D:\C#\Практика\29\num1\bin\Debug\num1.pdb
+D:\C#\Практика\29\num1\obj\Debug\num1.csproj.AssemblyReference.cache
+D:\C#\Практика\29\num1\obj\Debug\num1.csproj.SuggestedBindingRedirects.cache
+D:\C#\Практика\29\num1\obj\Debug\num1.Form1.resources
+D:\C#\Практика\29\num1\obj\Debug\num1.Properties.Resources.resources
+D:\C#\Практика\29\num1\obj\Debug\num1.csproj.GenerateResource.cache
+D:\C#\Практика\29\num1\obj\Debug\num1.csproj.CoreCompileInputs.cache
+D:\C#\Практика\29\num1\obj\Debug\num1.exe
+D:\C#\Практика\29\num1\obj\Debug\num1.pdb
